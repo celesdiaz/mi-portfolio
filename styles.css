@@ -1,0 +1,145 @@
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+.seccion {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: #8510b0;
+  padding: 15px 0;
+}
+.logo { color: #fff; font-size: 1.8rem; }
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg,#b37be2,#4a065b);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+.mi-foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Secciones */
+section { padding: 60px 20px; }
+section h2 { text-align: center; margin-bottom: 20px; }
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  max-width: 700px;
+  margin: auto;
+}
+.skills-grid span {
+  background: #e1bee7;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.projects {
+  background: linear-gradient(135deg,#b37be2,#4a065b);
+  
+}
+/* Proyectos */
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-5px); /*eleva la carta*/
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2); /*sombra*/
+}
+.card img {
+     max-width: 100%; 
+    border-radius: 8px; 
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Formulario */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-form button {
+  background: #a14b94;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form button:hover { background: #412851; }
+
+.social-links {
+  text-align: center;
+  margin-top: 20px;
+}
+.social-links a {
+  margin: 0 10px;
+  color: #934ba1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background: #8b489e;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
